@@ -1,37 +1,40 @@
-## Welcome to GitHub Pages
+# PALMER
+<!--
+PALMER: A Constrained Biclustering Algorithm to Improve Pathway Annotation Based on the Biomedical Literature Mining
+-->
 
-You can use the [editor on GitHub](https://github.com/elflini/palmer/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+PALMER (a constrained biclustering algorithm to improve **P**athway **A**nnotation based on the biomedical **L**iterature **M**ining) is a constrained biclustering approach that allows to identify indirect relationships among genes based on the text mining of biomedical literature, which allows researchers to utilize prior biological knowledge to guide identification of gene-gene associations.
+'palmer' package provides computationally efficient and user friendly interface to fit the PALMER models. 
+[The 'palmer' vignette](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/palmer.pdf?raw=true) provides a good start point for the step-by-step data analysis using 'palmer' package.The following help pages provide a good start point for the genetic analysis using the 'GPA' package, including the overview of 'GPA' package and the example command lines:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+library(palmer)
+package?palmer
+class?palmer
+vignette("palmer")
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Installation
+============ 
 
-### Jekyll Themes
+The stable versions of 'palmer' package can be obtained from the following URLs:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/elflini/palmer/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Package source: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/palmer_0.1.tar.gz](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/palmer_0.1.tar.gz?raw=true)
 
-### Support or Contact
+Windows binary: [https://github.com/dongjunchung/chunglab_binary_packages/blob/master/palmer_0.1.zip](https://github.com/dongjunchung/chunglab_binary_packages/blob/master/palmer_0.1.zip?raw=true)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Mac OS/X binary: [comming soon](https://?raw=true)
+
+To install the developmental versions of 'palmer' package, it's easiest to use the 'devtools' package.
+
+```
+#install.packages("devtools")
+library(devtools)
+install_github("dongjunchung/palmer", build_vignettes= TRUE)
+```
+
+References
+==========
+Nam JH, Couch D, Silveira W.A, Yu Z and Chung D (2019) ''PALMER: A constrained biclustering Algorithm to improve pathway annotation based on the biomedical literature mining''.
+
+
