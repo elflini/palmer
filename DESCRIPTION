@@ -12,4 +12,4 @@ Imports: pheatmap
 RoxygenNote: 6.1.1
 Suggests: knitr, rmarkdown 
 VignetteBuilder: knitr
-#LazyData: true
+LazyData: true
