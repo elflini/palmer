@@ -30,7 +30,7 @@ To install the developmental versions of 'palmer' package, it's easiest to use t
 ```
 #install.packages("devtools")
 library(devtools)
-install_github("dongjunchung/palmer", build_vignettes= TRUE)
+install_github("elflini/palmer", build_vignettes= TRUE)
 ```
 
 References
